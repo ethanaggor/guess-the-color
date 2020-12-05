@@ -1,6 +1,6 @@
 body {
   display: flex;
-  height: 50vh;
+  height: 75vh;
   text-align: center;
   flex-direction: column;
   justify-content: center;
@@ -8,8 +8,11 @@ body {
 }
 
 .dots {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 18px;
 }
 
 #reset {
