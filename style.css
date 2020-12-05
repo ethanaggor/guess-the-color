@@ -1,4 +1,18 @@
-button {
+body {
+  display: flex;
+  height: 50vh;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dots {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#reset {
   background-size: 220%;
   box-shadow: 0 0.2em 0.3em rgba(0, 0, 0, 0.15);
   color: #b63354;
@@ -23,13 +37,13 @@ button {
   outline: none;
 }
 
-button:hover {
+#reset:hover {
   transform: translateY(-2px);
   box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.25);
   background-position: 0;
   color: #fff;
 }
 
-button:active {
+#reset:active {
   transform: translateY(-1px);
 }
