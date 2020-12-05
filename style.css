@@ -1,0 +1,20 @@
+body {
+  display: flex;
+  height: 50vh;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dots {
+    margin-top: 100px;
+}
+
+#reset {
+    margin-top: 30px;
+    padding: 10px 15px;
+    background: linear-gradient(90deg, rgb(195, 14, 186) 0%, rgb(0, 212, 255) 100%);
+    border-radius: 15%;
+    border: 5px, solid, black;
+}
