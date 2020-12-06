@@ -8,11 +8,35 @@ body {
 }
 
 .dots {
+  display: flex;
   margin-bottom: 25px;
 }
 
+.dots > button {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 55px;
+  margin: 30px;
+}
+
+/* Margin:
+margin: all-sides
+margin: 30px;
+
+margin: top-bottom, left-right
+margin: 10px, 15px
+
+margin: top , right, bottom, left
+margin: 10px, 5px, 0px, 8px
+*/
+
 h2 {
-  font-size: 18px;
+  font-size: 40px;
+  margin-top: 0px;
 }
 
 #reset {
@@ -36,7 +60,7 @@ h2 {
     transparent 50%,
     transparent 100%
   );
-  font-size: 7px;
+  font-size: 21px;
   outline: none;
 }
 
