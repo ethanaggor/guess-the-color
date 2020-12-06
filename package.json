@@ -1,0 +1,24 @@
+{
+  "name": "guess-the-color",
+  "version": "1.0.0",
+  "description": "Based on the guess the color game from https://projects.raspberrypi.org/en/projects/cd-beginner-javascript-sushi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dibleauzah/guess-the-color.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dibleauzah/guess-the-color/issues"
+  },
+  "homepage": "https://github.com/dibleauzah/guess-the-color#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.6"
+  }
+}
