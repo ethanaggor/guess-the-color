@@ -47,22 +47,50 @@ function colorDots() {
   }
 
   // Fills the RGB title values
+  let rgbValue = '';
 
   for (let i = 0; i < 6; i++) {
     if (i === randomNum) {
       const { r, g, b } = dot[wordList[i]];
       document.getElementById("rgb-value").innerText = `RGB (${r}, ${g}, ${b})`;
+      rgbValue = `rgb(${r}, ${g}, ${b})`;
     }
   }
+
+  return rgbValue;
+
 }
 
-colorDots();
+let rgbValue = colorDots();
 
 const buttons = document.querySelectorAll("button");
 console.log(buttons);
+const wrapper = document.querySelector('.wrapper');
+const h1 = document.createElement('h1');
+wrapper.appendChild(h1);
+h1.classList.add('resultMessage');
 
 buttons.forEach((button) => {
-  // button.addEventListener('click', () => {
-  // });
+  h1.textContent = '';
+  button.addEventListener('click', () => {
+    if (button.style.backgroundColor === rgbValue) {
+      h1.style.border = `4px solid green`
+      h1.style.fontSize = '28px';
+      h1.style.color = 'green';
+      h1.textContent = 'Winner!';
+    } else {
+      h1.style.border = `4px solid ${button.style.backgroundColor}`
+      h1.style.fontSize = '28px';
+      h1.style.color = 'red';
+      h1.textContent = 'You Lose!';
+    }
+  });
   console.log(button);
+});
+
+const reset = document.querySelector('#reset');
+
+reset.addEventListener('click', () => {
+  h1.textContent = '';
+  rgbValue = colorDots();
 });

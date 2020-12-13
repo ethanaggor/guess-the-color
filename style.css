@@ -72,3 +72,8 @@ h2 {
 #reset:active {
   transform: translateY(-1px);
 }
+
+.resultMessage {
+  border: none;
+  border-radius: 15px;
+}
