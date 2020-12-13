@@ -56,10 +56,13 @@ function colorDots() {
   }
 }
 
-// function checkWin(e) {
-//   if (e.target.value === document.getElementById("rgb-value")) {
-//     console.log("Win!");
-//   }
-// }
-
 colorDots();
+
+const buttons = document.querySelectorAll("button");
+console.log(buttons);
+
+buttons.forEach((button) => {
+  // button.addEventListener('click', () => {
+  // });
+  console.log(button);
+});
